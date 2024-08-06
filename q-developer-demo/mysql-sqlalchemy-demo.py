@@ -6,10 +6,7 @@ import sqlalchemy as db
 from sqlalchemy.sql import text
 
 # Global variables
-secret_name = "rds!cluster-2d4c782c-f990-4538-a230-2984f61788f0"
-db_host = 'aurora-mysql-5-7-instance-1.cykxuprqcxvu.us-east-1.rds.amazonaws.com'
-db_port = '3306'
-db_name = ''
+from variables import secret_name, db_host, db_port, db_name
 
 # Function to retrieve secret from Secrets Manager
 def get_secret(secret_name):
